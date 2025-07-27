@@ -7,6 +7,7 @@ vim.opt.number = false -- Disable absolute line numbers
 vim.opt.relativenumber = false -- Disable relative line numbers
 vim.opt.title = true
 vim.opt.titlelen = 85
+-- terminal title bar starts with the root of project dir name
 vim.opt.titlestring = '%{fnamemodify(getcwd(), ":t")}/%{fnamemodify(expand("%:p"), ":.:r")}%{expand("%:e") == "" ? "" : "." .. expand("%:e")} [%{mode()}]'
 vim.keymap.set("n", "x", '"_x')
 vim.keymap.set("n", "c", '"_c')
