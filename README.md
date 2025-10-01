@@ -1,0 +1,1 @@
+- use this when ssh into a server in kitty: `kitty +kitten ssh m90dev`
