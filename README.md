@@ -1,1 +1,1 @@
-- use this when ssh into a server in kitty: `kitty +kitten ssh m90dev`
+- use this when ssh into a server in kitty for the first time: `kitty +kitten ssh m90dev`
