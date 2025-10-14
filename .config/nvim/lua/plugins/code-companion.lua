@@ -26,3 +26,41 @@ return {
     })
   end,
 }
+return {
+  "olimorris/codecompanion.nvim",
+  opts = {
+
+    strategies = {
+      chat = {
+        adapter = "deepseek",
+        model = "deepseek-coder",
+      },
+    },
+    opts = {
+      log_level = "DEBUG",
+    },
+    adapters = {
+      http = {
+        deepseek = function()
+          return require("codecompanion.adapters").extend("deepseek", {
+            env = {
+              api_key = "sk-d3751a8199a4414c9432bab238aec77b",
+            },
+          })
+        end,
+      },
+    },
+  },
+  dependencies = {
+    "nvim-lua/plenary.nvim",
+  },
+  -- config = function()
+  -- require("codecompanion").setup({
+  -- Add your configuration here
+  -- For example:
+  -- language = "python",
+  -- model = "gpt-3.5-turbo",
+  -- extensions = {},
+  -- })
+  -- end,
+}
