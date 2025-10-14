@@ -44,7 +44,7 @@ return {
         deepseek = function()
           return require("codecompanion.adapters").extend("deepseek", {
             env = {
-              api_key = "sk-d3751a8199a4414c9432bab238aec77b",
+              api_key = "sk-",
             },
           })
         end,
