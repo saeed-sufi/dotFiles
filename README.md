@@ -1,3 +1,14 @@
+## Ubuntu Gnome
+- Install the following:
+```
+sudo apt install gnome-shell-extension-manager
+[https://extensions.gnome.org/extension/307/dash-to-dock/
+](https://extensions.gnome.org/extension/307/dash-to-dock/)
+[https://extensions.gnome.org/extension/779/clipboard-indicator/
+](https://extensions.gnome.org/extension/779/clipboard-indicator/)
+[https://extensions.gnome.org/extension/973/switcher/
+](https://extensions.gnome.org/extension/973/switcher/)
+```
 ## VS Code
 - Place the `keybindings.json` and `settings.json` files inside the following path:
   ```
