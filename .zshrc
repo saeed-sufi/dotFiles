@@ -114,6 +114,8 @@ alias ls1="ls -1"
 alias d="docker"
 alias dc="docker compose"
 alias lzd='lazydocker'
+alias tree2="tree -L 2 -I node_modules"
+alias tree3="tree -L 3 -I node_modules"
 drmc() {
  docker rm $(docker ps -a -q)
 }
@@ -145,4 +147,34 @@ export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
 # Load Angular CLI autocompletion.
 source <(ng completion script)
 
-alias config='/usr/bin/git --git-dir=/home/saeed-sufi/.cfg/ --work-tree=/home/saeed-sufi'
+
+# Disable kitty's default title management
+# Add to ~/.config/kitty/kitty.conf: shell_integration enabled no-title
+
+DISABLE_AUTO_TITLE="true"
+
+# Function to set terminal title
+function set_terminal_title() {
+
+  local dir_name="${PWD##*/}"  # Get just the directory name
+  if [[ -n "$1" ]]; then
+    # When a process is running, show the directory and command
+    print -Pn "\e]0;$dir_name | $1\a"
+  else
+    # Default title showing only the current directory
+    print -Pn "\e]0;$dir_name\a"
+  fi
+}
+
+# Pre-command hook to update the title before each command
+function preexec() {
+  set_terminal_title "$1"
+}
+
+# Post-command hook to reset the title after each command
+function precmd() {
+  set_terminal_title
+}
+
+# Set initial title
+set_terminal_title
