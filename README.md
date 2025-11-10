@@ -100,6 +100,12 @@ __pycache__/
 ```
 
 ## Node
+- Install[ n (node version manager)](https://github.com/tj/n?tab=readme-ov-file#installation):
+```
+curl -fsSL -o /usr/local/bin/n https://raw.githubusercontent.com/tj/n/master/bin/n 
+chmod 0755 /usr/local/bin/n
+n install lts
+```
 - To delete all the `node_modules` folders inside a specific directory run this:
 ```
 find /path/to/your/project -name "node_modules" -type d -prune -exec rm -rf '{}' +
