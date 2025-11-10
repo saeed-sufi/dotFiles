@@ -77,7 +77,6 @@ docker run -d \
 ```
 curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
 ```
-and then `echo "alias lzd='lazydocker'" >> ~/.zshrc`
 
 ## Python
 - To install it:
