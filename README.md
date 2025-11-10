@@ -61,7 +61,7 @@ and then `echo "alias lzd='lazydocker'" >> ~/.zshrc`
 sudo zypper install python3 python3-pip
 sudo zypper install python3-virtualenv
 ```
-- Or install it using Pyenv:
+- Or install it using [Pyenv]([url](https://github.com/pyenv/pyenv?tab=readme-ov-file#linuxunix)):
 ```
 zypper install gcc automake bzip2 libbz2-devel xz xz-devel openssl-devel ncurses-devel \
 readline-devel zlib-devel tk-devel libffi-devel sqlite3-devel gdbm-devel make findutils patch
