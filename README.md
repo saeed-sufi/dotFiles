@@ -12,6 +12,16 @@ sudo apt install gnome-shell-extension-manager
 [https://extensions.gnome.org/extension/973/switcher/
 ](https://extensions.gnome.org/extension/973/switcher/)
 
+## Zsh
+```
+sudo apt install zsh-autosuggestions zsh-syntax-highlighting zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
+git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git $ZSH_CUSTOM/plugins/zsh-autocomplete
+git clone https://github.com/jeffreytse/zsh-vi-mode ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-vi-mode
+
+```
 ## VS Code
 - Place the `keybindings.json` and `settings.json` files inside the following path:
   ```
