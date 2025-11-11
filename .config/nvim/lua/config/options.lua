@@ -3,8 +3,8 @@
 -- Add any additional options here
 -- vim.opt.winbar = "%=%m %f"
 vim.opt.wrap = true
-vim.opt.number = false -- Disable absolute line numbers
-vim.opt.relativenumber = false -- Disable relative line numbers
+vim.opt.number = true -- Disable absolute line numbers
+vim.opt.relativenumber = true -- Disable relative line numbers
 vim.opt.title = true
 vim.opt.titlelen = 85
 -- terminal title bar starts with the root of project dir name
