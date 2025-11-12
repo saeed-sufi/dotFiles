@@ -12,6 +12,11 @@ sudo apt install gnome-shell-extension-manager
 [https://extensions.gnome.org/extension/973/switcher/
 ](https://extensions.gnome.org/extension/973/switcher/)
 
+- Run the following to have the expected click behaviour on app icon clicks:
+```
+gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
+```
+
 ## Zsh
 ```
 sudo apt install zsh-autosuggestions zsh-syntax-highlighting zsh
