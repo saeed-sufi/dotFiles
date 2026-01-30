@@ -31,6 +31,12 @@ Then:
 ```
 chsh -s zsh
 ```
+
+## Remap caps to ctrl (gnome):
+```
+gsettings set org.gnome.desktop.input-sources xkb-options "['ctrl:nocaps']"
+```
+
 ## VS Code
 - Place the `keybindings.json` and `settings.json` files inside the following path:
   ```
