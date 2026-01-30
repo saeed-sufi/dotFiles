@@ -27,6 +27,10 @@ git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git $ZS
 git clone https://github.com/jeffreytse/zsh-vi-mode ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-vi-mode
 
 ```
+Then:
+```
+chsh -s zsh
+```
 ## VS Code
 - Place the `keybindings.json` and `settings.json` files inside the following path:
   ```
