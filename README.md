@@ -44,6 +44,13 @@ gsettings set org.gnome.desktop.input-sources xkb-options "['ctrl:nocaps']"
   ```
 
 ## Docker
+To drop using `sudo` before docker commands:
+```
+sudo groupadd docker
+sudo usermod -aG docker $USER
+```
+And then reboot.
+
 To change docker repos: 
 ```
  sudo bash -c 'cat > /etc/docker/daemon.json <<EOF
