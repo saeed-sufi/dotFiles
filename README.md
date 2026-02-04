@@ -20,6 +20,11 @@ gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
 ```
 sudo apt install xclip xsel wl-clipboard
 ```
+- Run the following to make `fdfind` available to lazyvim:
+```
+sudo apt install fd-find
+sudo ln -s $(which fdfind) /usr/local/bin/fd
+```
 
 ## Zsh
 ```
