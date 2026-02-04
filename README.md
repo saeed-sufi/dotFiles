@@ -16,6 +16,10 @@ sudo apt install gnome-shell-extension-manager
 ```
 gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
 ```
+- Run the following to make the clipboard sharing available between lazyvim and ubuntu:
+```
+sudo apt install xclip xsel wl-clipboard
+```
 
 ## Zsh
 ```
