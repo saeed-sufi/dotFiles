@@ -25,6 +25,15 @@ sudo apt install xclip xsel wl-clipboard
 sudo apt install fd-find
 sudo ln -s $(which fdfind) /usr/local/bin/fd
 ```
+- Install `yazi` file manager from source:
+```
+cd /tmp
+wget https://github.com/sxyazi/yazi/releases/latest/download/yazi-x86_64-unknown-linux-musl.zip
+unzip yazi-x86_64-unknown-linux-musl.zip
+cd yazi-x86_64-unknown-linux-musl
+# Move both yazi AND ya to /usr/local/bin
+sudo mv yazi ya /usr/local/bin/
+```
 
 ## Zsh
 ```
