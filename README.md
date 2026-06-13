@@ -119,16 +119,18 @@ curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/i
 ```
 
 ## Python
-- To install it:
+
+- Install it using [Pyenv](https://github.com/pyenv/pyenv?tab=readme-ov-file#linuxunix):
 ```
-sudo zypper install python3 python3-pip
-sudo zypper install python3-virtualenv
-```
-- Or install it using [Pyenv](https://github.com/pyenv/pyenv?tab=readme-ov-file#linuxunix):
-```
-zypper install gcc automake bzip2 libbz2-devel xz xz-devel openssl-devel ncurses-devel \
-readline-devel zlib-devel tk-devel libffi-devel sqlite3-devel gdbm-devel make findutils patch
-curl https://pyenv.run | bash
+sudo apt update && sudo apt upgrade -y
+
+sudo apt install -y \
+build-essential curl git \
+libssl-dev zlib1g-dev libbz2-dev \
+libreadline-dev libsqlite3-dev \
+libffi-dev liblzma-dev \
+tk-dev tcl-dev uuid-dev \
+xz-utils ca-certificates
 ```
 and then add the following to `.zshrc`:
 ```
@@ -141,7 +143,11 @@ eval "$(pyenv virtualenv-init -)"
 pyenv install 3.10.12
 pyenv global 3.10.12  # Set it as the default
 ```
-- Create a new env and source it:
+- or inside a project dir, first set a local python version:
+```
+pyenv local 3.12.8
+```
+- And then create a new env and source it:
 ```
 python3 -m venv myenv
 source myenv/bin/activate
